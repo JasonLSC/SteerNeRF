@@ -82,7 +82,7 @@
                 <div class="col-md-4 col-md-offset-4 text-center">
                     <ul class="nav nav-pills nav-justified">
                         <li>
-                            <a href="">
+                            <a href="https://openaccess.thecvf.com/content/CVPR2023/papers/Li_SteerNeRF_Accelerating_NeRF_Rendering_via_Smooth_Viewpoint_Trajectory_CVPR_2023_paper.pdf">
                             <image src="img/paperclip.png" height="60px">
                                 <h4><strong>Paper</strong></h4>
                             </a>
@@ -96,7 +96,7 @@
                     </ul>
                 </div>
         </div>
-
+<!--
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
 
@@ -107,13 +107,13 @@
                 
             </div>
         </div>
-
+-->
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
                 <h3>
                     Abstract
                 </h3>
-                <image src="img/teaser.jpg" class="img-responsive" alt="overview"><br>
+                <image src="img/teaser.png" class="img-responsive" alt="overview"><br>
                 <p class="text-justify">
                     Neural Radiance Fields (NeRF) have demonstrated superior novel view synthesis performance but are slow at rendering. To speed up the volume rendering process, many acceleration methods have been proposed at the cost of large memory consumption. To push the frontier of the efficiency-memory trade-off, we explore a new perspective to accelerate NeRF rendering, leveraging a key fact that the viewpoint change is usually smooth and continuous in interactive viewpoint control. This allows us to leverage the information of preceding viewpoints to reduce the number of rendered pixels as well as the number of sampled points along the ray of the remaining pixels. In our pipeline, a low-resolution feature map is rendered first by volume rendering, then a lightweight 2D neural renderer is applied to generate the output image at target resolution leveraging the features of preceding and current frames. We show that the proposed method can achieve competitive rendering quality while reducing the rendering time with little memory overhead, enabling 30FPS at 1080P image resolution with a low memory footprint. 
                 </p>
@@ -127,7 +127,14 @@
                 </h3>
                 <div class="form-group col-md-10 col-md-offset-1">
                     <textarea id="bibtex" class="form-control" readonly>
-                    
+@InProceedings{Li_2023_CVPR,
+    author    = {Li, Sicheng and Li, Hao and Wang, Yue and Liao, Yiyi and Yu, Lu},
+    title     = {SteerNeRF: Accelerating NeRF Rendering via Smooth Viewpoint Trajectory},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    month     = {June},
+    year      = {2023},
+    pages     = {20701-20711}
+}
                     </textarea>
                 </div>
             </div>
@@ -138,6 +145,9 @@
                 <h3>
                     Acknowledgements
                 </h3>
+                <p class="text-justify">
+                    This work is supported by the National Natural Science Foundation of China under Grant No. U21B2004, No. 62071427, No. 62202418, Zhejiang University Education Foundation Qizhen Scholar Foundation, and the Fundamental Research Funds for the Central Universities under Grant No. 226-2022-00145.
+                </p>
                 <p class="text-justify">
                     <br>
                 The website template was borrowed from <a href="https://jonbarron.info/">Jon Barron</a>.
